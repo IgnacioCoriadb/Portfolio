@@ -5,5 +5,9 @@
         "technologies": "Technologies",
         "projects": "Projects",
         "contact": "Contact"
+    },
+    "header": {
+        "text-p": "Web Application Development Technician and Full Stack Programmer"
     }
+
 }
