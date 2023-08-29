@@ -23,3 +23,9 @@
 .link:hover {
     color: #FFA500; /* Cambia el color al pasar el cursor */
 }
+
+.flag{
+    width: 40px;
+    margin: 10px;
+    cursor: pointer;
+}
