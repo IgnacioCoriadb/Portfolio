@@ -1,10 +1,11 @@
 import React, { useEffect} from 'react';
 import { Link } from "react-scroll";
 import style from "./Navbar.module.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const NavBar = () => {
 
- 
     return (
     <div>
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
@@ -28,6 +29,7 @@ const NavBar = () => {
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                     >
+                    <FontAwesomeIcon icon={faBars} style={{ color: "#fff" }} />
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto">
