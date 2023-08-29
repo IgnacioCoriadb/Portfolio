@@ -1,0 +1,12 @@
+.social{
+    padding: 20px;
+}
+.footer-icon{
+    padding: 20px;
+    font-size:3rem;
+    color: #fff;
+}
+
+.footer-icon:hover {
+    color: #FFA500; /* Cambia el color al pasar el cursor */
+}
