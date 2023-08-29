@@ -7,8 +7,11 @@ import Technologies from './Components/Technologies/Technologies';
 import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
+import { useTranslation } from 'react-i18next';
 
 function App() {
+  const [t] = useTranslation("global");
+
   return (
     <div className="App">
       <header className="App-header">
@@ -16,7 +19,7 @@ function App() {
           <Header />
       </Element>
       <Element name="about" className="element">
-        <h1>Sobre Mi</h1>
+        <h1>{t("about-me.about")}</h1>
       </Element>
       <AboutMe/>
       <Element name="technologies" className="element">
