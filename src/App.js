@@ -23,15 +23,15 @@ function App() {
       </Element>
       <AboutMe/>
       <Element name="technologies" className="element">
-          <h1>Tecnologías</h1>
+        <h1>{t("navbar.technologies")}</h1>
       </Element>
       <Technologies/>
       <Element name="projects" className="element">
-        <h1>Proyectos</h1>
+        <h1>{t("navbar.projects")}</h1>
       </Element>
       <Projects></Projects>
       <Element name="contact" className="element">
-        <h1>Contacto</h1>
+        <h1>{t("navbar.contact")}</h1>
       </Element>
       <Contact></Contact>
       <Footer></Footer>

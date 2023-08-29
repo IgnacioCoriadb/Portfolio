@@ -3,12 +3,14 @@ import React, { useRef ,useState} from 'react';
 import emailjs from '@emailjs/browser';
 import style from "./Contact.module.css";
 import Swal from 'sweetalert2';
+import { useTranslation } from 'react-i18next';
 
 const Contact = ()=>{
     const serviceId = process.env.REACT_APP_SERVICE_ID_EMAILJS;
     const templateId =process.env.REACT_APP_TEMPLATE_ID_EMAILJS;
     const publicKey=process.env.REACT_APP_PUBLIC_KEY_EMAILJS;
-    
+    const [t] = useTranslation("global");
+
     const [formData, setFormData] =useState({
         user_name:'',
         user_email: '',
@@ -105,11 +107,9 @@ const Contact = ()=>{
                                     </textarea>
                                 </div>
                             </div>
-
-
                         <div className="form-group">
                             <div className="col-md-12 text-center">
-                                <input type="submit" value="Enviar" className="btn btn-primary bg-dark mt-1 mb-3"/>
+                                <input type="submit" value={t("contact.submit")} className="btn btn-primary bg-dark mt-1 mb-3"/>
                             </div>
                         </div>
                     </form>
